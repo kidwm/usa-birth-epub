@@ -5,6 +5,7 @@ a[epub|type~="noteref"] {
 	padding: 0 .5em;
 	font-size: smaller;
 }
+
 aside[epub|type~="footnotes"] {
 	page-break-before: always;
 	page-break-after: always;
@@ -27,4 +28,47 @@ aside[epub|type~="footnotes"] {
 
 [epub|type~="chapter"] {
 	page-break-before: always;
+}
+
+body {
+	margin: .5em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+figure {
+	margin: 0;
+	page-break-inside: avoid;
+	background-color: #eee;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+	padding: .5em 0;
+}
+
+aside {
+	padding: .5em 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+header + aside {
+	border: none;
+	border-left: .5em solid #ccc;
+	padding-left: .5em;
+}
+
+#ref { /* fix for Google Play Books */
+	vertical-align: super;
+	padding: 0 .5em;
+	font-size: smaller;
 }
