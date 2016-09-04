@@ -16,6 +16,11 @@
 		<item id="image_01_3" media-type="image/jpeg" href="images/Emanuel_Gottlieb_Leutze_-_Columbus_Before_the_Queen.JPG" />
 		<item id="image_01_4" media-type="image/png" href="images/Map_of_Venezuela_Demis_Shaded.png" />
 		<item id="image_01_5" media-type="image/jpeg" href="images/Amerigo_Vespucci.jpg" />
+		<item id="image_02_1" media-type="image/jpeg" href="images/JohnCabotPainting.jpg" />
+		<item id="image_02_2" media-type="image/jpeg" href="images/The_magazine_of_American_history_with_notes_and_queries_(1877)_(14766718462).jpg" />
+		<item id="image_02_3" media-type="image/jpeg" href="images/Pocahontas_by_Simon_van_de_Passe_1616.jpg" />
+		<item id="image_02_4" media-type="image/jpeg" href="images/MayflowerHarbor.jpg" />
+		<item id="image_02_5" media-type="image/jpeg" href="images/Map_of_territorial_growth_1775.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -24,11 +29,13 @@
 		<item href="part5.xhtml" id="part5" media-type="application/xhtml+xml"/>
 		<item href="part6.xhtml" id="part6" media-type="application/xhtml+xml"/>
 		<item href="chapter01.xhtml" id="chapter01" media-type="application/xhtml+xml"/>
+		<item href="chapter02.xhtml" id="chapter02" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
 		<itemref idref="part1" linear="yes" />
 		<itemref idref="chapter01" linear="yes" />
+		<itemref idref="chapter02" linear="yes" />
 		<itemref idref="part2" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
