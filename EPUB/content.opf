@@ -21,6 +21,13 @@
 		<item id="image_02_3" media-type="image/jpeg" href="images/Pocahontas_by_Simon_van_de_Passe_1616.jpg" />
 		<item id="image_02_4" media-type="image/jpeg" href="images/MayflowerHarbor.jpg" />
 		<item id="image_02_5" media-type="image/jpeg" href="images/Map_of_territorial_growth_1775.jpg" />
+		<item id="image_03_1" media-type="image/jpeg" href="images/Parson_Weems'_Fable.jpg" />
+		<item id="image_03_2" media-type="image/jpeg" href="images/Brooklyn_Museum_-_American_Beaver_-_John_J._Audubon.jpg" />
+		<item id="image_03_3" media-type="image/jpeg" href="images/Lawrence_Washington.jpg" />
+		<item id="image_03_4" media-type="image/jpeg" href="images/811px-Washington_Pennsylvania_Mapb.jpg" />
+		<item id="image_03_5" media-type="image/jpeg" href="images/FortDuquesne.jpg" />
+		<item id="image_03_6" media-type="image/jpeg" href="images/Fort_Necessity_101114.jpg" />
+		<item id="image_03_7" media-type="image/jpeg" href="images/Tomahawk_in_stump.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -30,12 +37,14 @@
 		<item href="part6.xhtml" id="part6" media-type="application/xhtml+xml"/>
 		<item href="chapter01.xhtml" id="chapter01" media-type="application/xhtml+xml"/>
 		<item href="chapter02.xhtml" id="chapter02" media-type="application/xhtml+xml"/>
+		<item href="chapter03.xhtml" id="chapter03" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
 		<itemref idref="part1" linear="yes" />
 		<itemref idref="chapter01" linear="yes" />
 		<itemref idref="chapter02" linear="yes" />
+		<itemref idref="chapter03" linear="yes" />
 		<itemref idref="part2" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
