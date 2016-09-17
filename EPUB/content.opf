@@ -28,6 +28,13 @@
 		<item id="image_03_5" media-type="image/jpeg" href="images/FortDuquesne.jpg" />
 		<item id="image_03_6" media-type="image/jpeg" href="images/Fort_Necessity_101114.jpg" />
 		<item id="image_03_7" media-type="image/jpeg" href="images/Tomahawk_in_stump.jpg" />
+		<item id="image_04_1" media-type="image/jpeg" href="images/Braddock's_death_at_the_Battle_of_Monongahela_9-July-1755.jpg" />
+		<item id="image_04_2" media-type="image/png" href="images/French_British_Forts_1753_1758.png" />
+		<item id="image_04_3" media-type="image/jpeg" href="images/Washington_1772.jpg" />
+		<item id="image_04_4" media-type="image/png" href="images/1024px-Martha_Washington.png" />
+		<item id="image_04_5" media-type="image/jpeg" href="images/George_III_in_Coronation_edit.jpg" />
+		<item id="image_04_6" media-type="image/jpeg" href="images/Queen_Charlotte_by_studio_of_Allan_Ramsay.jpg" />
+		<item id="image_04_7" media-type="image/jpeg" href="images/Francis_Ayscough_with_the_Prince_of_Wales_(later_King_George_III)_and_Edward_Augustus,_Duke_of_York_and_Albany_by_Richard_Wilson.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -38,6 +45,7 @@
 		<item href="chapter01.xhtml" id="chapter01" media-type="application/xhtml+xml"/>
 		<item href="chapter02.xhtml" id="chapter02" media-type="application/xhtml+xml"/>
 		<item href="chapter03.xhtml" id="chapter03" media-type="application/xhtml+xml"/>
+		<item href="chapter04.xhtml" id="chapter04" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -45,6 +53,7 @@
 		<itemref idref="chapter01" linear="yes" />
 		<itemref idref="chapter02" linear="yes" />
 		<itemref idref="chapter03" linear="yes" />
+		<itemref idref="chapter04" linear="yes" />
 		<itemref idref="part2" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
