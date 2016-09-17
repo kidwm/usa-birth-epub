@@ -47,6 +47,15 @@
 		<item id="image_06_5" media-type="image/jpeg" href="images/Boston_Massacre_Memorial_-_IMG_9560.JPG" />
 		<item id="image_06_6" media-type="image/jpeg" href="images/Henry_Knox_by_Peale.jpg" />
 		<item id="image_06_7" media-type="image/jpeg" href="images/Crispus_Attucks.jpg" />
+		<item id="image_07_1" media-type="image/jpeg" href="images/Boston_Tea_Party_Currier_colored.jpg" />
+		<item id="image_07_2" media-type="image/jpeg" href="images/Battle_at_Kuzhai.jpg" />
+		<item id="image_07_3" media-type="image/jpeg" href="images/View_of_East_India_House.jpg" />
+		<item id="image_07_4" media-type="image/jpeg" href="images/Voc.jpg" />
+		<item id="image_07_5" media-type="image/jpeg" href="images/ThomasHutchinsonByEdwardTruman.jpg" />
+		<item id="image_07_6" media-type="image/jpeg" href="images/J_S_Copley_-_Samuel_Adams.jpg" />
+		<item id="image_07_7" media-type="image/jpeg" href="images/Faneuilhall104.JPG" />
+		<item id="image_07_8" media-type="image/jpeg" href="images/Boston_Tea_Party-1973_issue-3c.jpg" />
+		<item id="image_07_9" media-type="image/jpeg" href="images/Thomas_Gage_John_Singleton_Copley.jpeg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -60,6 +69,7 @@
 		<item href="chapter04.xhtml" id="chapter04" media-type="application/xhtml+xml"/>
 		<item href="chapter05.xhtml" id="chapter05" media-type="application/xhtml+xml"/>
 		<item href="chapter06.xhtml" id="chapter06" media-type="application/xhtml+xml"/>
+		<item href="chapter07.xhtml" id="chapter07" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -70,6 +80,7 @@
 		<itemref idref="chapter04" linear="yes" />
 		<itemref idref="chapter05" linear="yes" />
 		<itemref idref="chapter06" linear="yes" />
+		<itemref idref="chapter07" linear="yes" />
 		<itemref idref="part2" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
