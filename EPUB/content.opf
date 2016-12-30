@@ -56,6 +56,10 @@
 		<item id="image_07_7" media-type="image/jpeg" href="images/Faneuilhall104.JPG" />
 		<item id="image_07_8" media-type="image/jpeg" href="images/Boston_Tea_Party-1973_issue-3c.jpg" />
 		<item id="image_07_9" media-type="image/jpeg" href="images/Thomas_Gage_John_Singleton_Copley.jpeg" />
+		<item id="image_08_1" media-type="image/jpeg" href="images/Grenadier,_40th_Foot,_1767.jpg" />
+		<item id="image_08_2" media-type="image/jpeg" href="images/RapeBoston.jpg" />
+		<item id="image_08_3" media-type="image/jpeg" href="images/SomervillePowderhouse1935.jpg" />
+		<item id="image_08_4" media-type="image/jpeg" href="images/Minute_Man.JPG" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -70,6 +74,7 @@
 		<item href="chapter05.xhtml" id="chapter05" media-type="application/xhtml+xml"/>
 		<item href="chapter06.xhtml" id="chapter06" media-type="application/xhtml+xml"/>
 		<item href="chapter07.xhtml" id="chapter07" media-type="application/xhtml+xml"/>
+		<item href="chapter08.xhtml" id="chapter08" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -82,6 +87,7 @@
 		<itemref idref="chapter06" linear="yes" />
 		<itemref idref="chapter07" linear="yes" />
 		<itemref idref="part2" linear="yes" />
+		<itemref idref="chapter08" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
 		<itemref idref="part5" linear="yes" />

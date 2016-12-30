@@ -39,9 +39,10 @@ p {
 }
 
 figure {
-	margin: 0;
+	margin: 0 auto;
 	page-break-inside: avoid;
 	background-color: #eee;
+	width: fit-content;
 }
 
 figure img {
@@ -52,7 +53,8 @@ figure img {
 
 figcaption {
 	text-align: center;
-	padding: .5em 0;
+	padding: .5em;
+	background-color: #eee;
 }
 
 aside {
