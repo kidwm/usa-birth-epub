@@ -87,6 +87,8 @@
 		<item id="image_12_4" media-type="image/png" href="images/Massachusetts_12_pence_1776_front.png" />
 		<item id="image_12_5" media-type="image/jpeg" href="images/Continental_Currency_One-Third-Dollar_17-Feb-76_obv.jpg" />
 		<item id="image_12_6" media-type="image/jpeg" href="images/Olive_petition_petition_big.jpg" />
+		<item id="image_13_1" media-type="image/jpeg" href="images/Greene_portrait.jpg" />
+		<item id="image_13_2" media-type="image/jpeg" href="images/Henry_Knox_by_Gilbert_Stuart_1806.jpeg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -106,6 +108,7 @@
 		<item href="chapter10.xhtml" id="chapter10" media-type="application/xhtml+xml"/>
 		<item href="chapter11.xhtml" id="chapter11" media-type="application/xhtml+xml"/>
 		<item href="chapter12.xhtml" id="chapter11" media-type="application/xhtml+xml"/>
+		<item href="chapter13.xhtml" id="chapter11" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -123,6 +126,7 @@
 		<itemref idref="chapter10" linear="yes" />
 		<itemref idref="chapter11" linear="yes" />
 		<itemref idref="chapter12" linear="yes" />
+		<itemref idref="chapter13" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
 		<itemref idref="part5" linear="yes" />
