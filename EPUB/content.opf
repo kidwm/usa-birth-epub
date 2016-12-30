@@ -74,6 +74,13 @@
 		<item id="image_10_4" media-type="image/jpeg" href="images/Percy's_Rescue_at_Lexington_Detail.jpg" />
 		<item id="image_10_5" media-type="image/png" href="images/Concord_Retreat.png" />
 		<item id="image_10_6" media-type="image/jpeg" href="images/Lexington_Concord_Siege_of_Boston.jpg" />
+		<item id="image_11_1" media-type="image/jpeg" href="images/Pyrrhus.JPG" />
+		<item id="image_11_2" media-type="image/jpeg" href="images/Detroit_Photographic_Company_(0371).jpg" />
+		<item id="image_11_3" media-type="image/jpeg" href="images/Gen._Sir_William_Howe.jpg" />
+		<item id="image_11_4" media-type="image/jpeg" href="images/Map_of_the_Battle_of_Bunker_Hill_area.jpg" />
+		<item id="image_11_5" media-type="image/jpeg" href="images/General_John_Stark_Edit.jpg" />
+		<item id="image_11_6" media-type="image/jpeg" href="images/Israel_putnam_portrait.jpg" />
+		<item id="image_11_7" media-type="image/jpeg" href="images/The_death_of_general_warren_at_the_battle_of_bunker_hill.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -91,6 +98,7 @@
 		<item href="chapter08.xhtml" id="chapter08" media-type="application/xhtml+xml"/>
 		<item href="chapter09.xhtml" id="chapter09" media-type="application/xhtml+xml"/>
 		<item href="chapter10.xhtml" id="chapter10" media-type="application/xhtml+xml"/>
+		<item href="chapter11.xhtml" id="chapter11" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -106,6 +114,7 @@
 		<itemref idref="chapter08" linear="yes" />
 		<itemref idref="chapter09" linear="yes" />
 		<itemref idref="chapter10" linear="yes" />
+		<itemref idref="chapter11" linear="yes" />
 		<itemref idref="part3" linear="yes" />
 		<itemref idref="part4" linear="yes" />
 		<itemref idref="part5" linear="yes" />
