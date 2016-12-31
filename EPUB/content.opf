@@ -112,6 +112,10 @@
 		<item id="image_20_1" media-type="image/png" href="images/George_Germain,_1st_Viscount_Sackville.PNG" />
 		<item id="image_20_2" media-type="image/png" href="images/1000px-American_attack_on_Quebec.svg.png" />
 		<item id="image_20_3" media-type="image/jpeg" href="images/John_Manners_Marquess_of_Granby_1763_65.jpg" />
+		<item id="image_21_1" media-type="image/jpeg" href="images/1777BurgoyneTiconderoga.jpg" />
+		<item id="image_21_2" media-type="image/jpeg" href="images/The_Death_of_Jane_McCrea_John_Vanderlyn_1804_crop.jpg" />
+		<item id="image_21_3" media-type="image/png" href="images/Bennington1777Map_Restoration.png" />
+		<item id="image_21_4" media-type="image/jpeg" href="images/John_Stark_Bennington_Vermont_Statue.JPG" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -139,6 +143,7 @@
 		<item href="chapter18.xhtml" id="chapter18" media-type="application/xhtml+xml"/>
 		<item href="chapter19.xhtml" id="chapter19" media-type="application/xhtml+xml"/>
 		<item href="chapter20.xhtml" id="chapter20" media-type="application/xhtml+xml"/>
+		<item href="chapter21.xhtml" id="chapter21" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -165,6 +170,7 @@
 		<itemref idref="chapter18" linear="yes" />
 		<itemref idref="chapter19" linear="yes" />
 		<itemref idref="chapter20" linear="yes" />
+		<itemref idref="chapter21" linear="yes" />
 		<itemref idref="part4" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
