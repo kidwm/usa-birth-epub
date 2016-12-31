@@ -116,6 +116,11 @@
 		<item id="image_21_2" media-type="image/jpeg" href="images/The_Death_of_Jane_McCrea_John_Vanderlyn_1804_crop.jpg" />
 		<item id="image_21_3" media-type="image/png" href="images/Bennington1777Map_Restoration.png" />
 		<item id="image_21_4" media-type="image/jpeg" href="images/John_Stark_Bennington_Vermont_Statue.JPG" />
+		<item id="image_22_1" media-type="image/jpeg" href="images/HoratioGatesByStuart_crop.jpg" />
+		<item id="image_22_2" media-type="image/jpeg" href="images/Simon_Fraser3.jpg" />
+		<item id="image_22_3" media-type="image/jpeg" href="images/DanielMorgan.jpeg" />
+		<item id="image_22_4" media-type="image/jpeg" href="images/Portret_Friedricha_Adolpha_Riedesel,_barona_Eisenbach.jpg" />
+		<item id="image_22_5" media-type="image/jpeg" href="images/Arnold_at_Saratoga.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -144,6 +149,7 @@
 		<item href="chapter19.xhtml" id="chapter19" media-type="application/xhtml+xml"/>
 		<item href="chapter20.xhtml" id="chapter20" media-type="application/xhtml+xml"/>
 		<item href="chapter21.xhtml" id="chapter21" media-type="application/xhtml+xml"/>
+		<item href="chapter22.xhtml" id="chapter22" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -171,6 +177,7 @@
 		<itemref idref="chapter19" linear="yes" />
 		<itemref idref="chapter20" linear="yes" />
 		<itemref idref="chapter21" linear="yes" />
+		<itemref idref="chapter22" linear="yes" />
 		<itemref idref="part4" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
