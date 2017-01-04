@@ -128,6 +128,9 @@
 		<item id="image_24_2" media-type="image/jpeg" href="images/Thomas_Conway_portrait.jpg" />
 		<item id="image_24_3" media-type="image/jpeg" href="images/Baron_Steuben_by_Peale,_1780.jpg" />
 		<item id="image_24_4" media-type="image/jpeg" href="images/Johann_de_Kalb.jpg" />
+		<item id="image_25_1" media-type="image/jpeg" href="images/Battle_of_fort_moultrie.jpg" />
+		<item id="image_25_2" media-type="image/gif" href="images/Battle_of_Monmouth.Dean.USMA.edu.history.gif" />
+		<item id="image_25_3" media-type="image/jpeg" href="images/BattleofMonmouth.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -159,6 +162,7 @@
 		<item href="chapter22.xhtml" id="chapter22" media-type="application/xhtml+xml"/>
 		<item href="chapter23.xhtml" id="chapter23" media-type="application/xhtml+xml"/>
 		<item href="chapter24.xhtml" id="chapter24" media-type="application/xhtml+xml"/>
+		<item href="chapter25.xhtml" id="chapter25" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -190,6 +194,7 @@
 		<itemref idref="chapter23" linear="yes" />
 		<itemref idref="chapter24" linear="yes" />
 		<itemref idref="part4" linear="yes" />
+		<itemref idref="chapter25" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
