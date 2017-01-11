@@ -145,6 +145,11 @@
 		<item id="image_29_5" media-type="image/jpeg" href="images/Kings_Mountain_Monument,_South_Carolina.jpg" />
 		<item id="image_30_1" media-type="image/jpeg" href="images/MajGenRobertHoweOval.jpg" />
 		<item id="image_30_2" media-type="image/jpeg" href="images/Mount_vernon_stamp.JPG" />
+		<item id="image_31_1" media-type="image/jpeg" href="images/Cowpens_-_main_sign_2.JPG" />
+		<item id="image_31_2" media-type="image/png" href="images/Battle_of_Cowpens.Dean.USMA.edu.history.png" />
+		<item id="image_31_3" media-type="image/jpeg" href="images/WilliamWashington.jpg" />
+		<item id="image_31_4" media-type="image/jpeg" href="images/Johneagerhoward.jpg" />
+		<item id="image_31_5" media-type="image/jpeg" href="images/Cowpens.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -182,6 +187,7 @@
 		<item href="chapter28.xhtml" id="chapter28" media-type="application/xhtml+xml"/>
 		<item href="chapter29.xhtml" id="chapter29" media-type="application/xhtml+xml"/>
 		<item href="chapter30.xhtml" id="chapter30" media-type="application/xhtml+xml"/>
+		<item href="chapter31.xhtml" id="chapter31" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -219,6 +225,7 @@
 		<itemref idref="chapter28" linear="yes" />
 		<itemref idref="chapter29" linear="yes" />
 		<itemref idref="chapter30" linear="yes" />
+		<itemref idref="chapter31" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
