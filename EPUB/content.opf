@@ -136,6 +136,8 @@
 		<item id="image_26_3" media-type="image/jpeg" href="images/Anthony_Wayne.jpg" />
 		<item id="image_27_1" media-type="image/jpeg" href="images/SavannahCapture1778.jpg" />
 		<item id="image_27_2" media-type="image/jpeg" href="images/CharlestownSC1780.jpg" />
+		<item id="image_28_1" media-type="image/gif" href="images/Battle_of_Camden.Dean.USMA.edu.history.gif" />
+		<item id="image_28_2" media-type="image/jpeg" href="images/Banastre-Tarleton-by-Joshua-Reynolds.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -170,6 +172,7 @@
 		<item href="chapter25.xhtml" id="chapter25" media-type="application/xhtml+xml"/>
 		<item href="chapter26.xhtml" id="chapter26" media-type="application/xhtml+xml"/>
 		<item href="chapter27.xhtml" id="chapter27" media-type="application/xhtml+xml"/>
+		<item href="chapter28.xhtml" id="chapter28" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -204,6 +207,7 @@
 		<itemref idref="chapter25" linear="yes" />
 		<itemref idref="chapter26" linear="yes" />
 		<itemref idref="chapter27" linear="yes" />
+		<itemref idref="chapter28" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
