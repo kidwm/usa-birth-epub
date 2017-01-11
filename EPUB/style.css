@@ -45,6 +45,10 @@ figure {
 	width: fit-content;
 }
 
+figure + figure {
+	margin-top: 1em;
+}
+
 figure img {
 	display: block;
 	max-width: 100%;
