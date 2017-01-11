@@ -153,6 +153,11 @@
 		<item id="image_32-1" media-type="image/jpeg" href="images/Battle_of_Guiliford_Courthouse_15_March_1781.jpg" />
 		<item id="image_32-2" media-type="image/gif" href="images/Hobkirk.GIF" />
 		<item id="image_32-3" media-type="image/gif" href="images/W-RSimpleMap.gif" />
+		<item id="image_33-1" media-type="image/jpeg" href="images/Benedict_Arnold.jpg" />
+		<item id="image_33-2" media-type="image/jpeg" href="images/John_Andre.jpg" />
+		<item id="image_33-3" media-type="image/jpeg" href="images/WestPoint1780.jpg" />
+		<item id="image_33-4" media-type="image/jpeg" href="images/Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800).jpg" />
+		<item id="image_33-5" media-type="image/jpeg" href="images/William_Phillips.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -192,6 +197,7 @@
 		<item href="chapter30.xhtml" id="chapter30" media-type="application/xhtml+xml"/>
 		<item href="chapter31.xhtml" id="chapter31" media-type="application/xhtml+xml"/>
 		<item href="chapter32.xhtml" id="chapter32" media-type="application/xhtml+xml"/>
+		<item href="chapter33.xhtml" id="chapter33" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -231,6 +237,7 @@
 		<itemref idref="chapter30" linear="yes" />
 		<itemref idref="chapter31" linear="yes" />
 		<itemref idref="chapter32" linear="yes" />
+		<itemref idref="chapter33" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
