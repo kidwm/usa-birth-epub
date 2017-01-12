@@ -167,6 +167,10 @@
 		<item id="image_35-1" media-type="image/jpeg" href="images/John_Jay_(Gilbert_Stuart_portrait).jpg" />
 		<item id="image_35-2" media-type="image/jpeg" href="images/Charles_Gravier,_Comte_de_Vergennes.jpg" />
 		<item id="image_35-3" media-type="image/jpeg" href="images/Treaty_of_Paris_1783_-_last_page_(hi-res).jpg" />
+		<item id="image_36-1" media-type="image/jpeg" href="images/RobertAndGouverneurMorris.jpg" />
+		<item id="image_36-2" media-type="image/jpeg" href="images/Newburgh_Address.jpg" />
+		<item id="image_36-3" media-type="image/jpeg" href="images/Washington's_Farewell_by_Alonzo_Chappel_1866.jpg" />
+		<item id="image_36-4" media-type="image/jpeg" href="images/General_George_Washington_Resigning_his_Commission.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -209,6 +213,7 @@
 		<item href="chapter33.xhtml" id="chapter33" media-type="application/xhtml+xml"/>
 		<item href="chapter34.xhtml" id="chapter34" media-type="application/xhtml+xml"/>
 		<item href="chapter35.xhtml" id="chapter35" media-type="application/xhtml+xml"/>
+		<item href="chapter36.xhtml" id="chapter36" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -252,6 +257,7 @@
 		<itemref idref="chapter34" linear="yes" />
 		<itemref idref="part5" linear="yes" />
 		<itemref idref="chapter35" linear="yes" />
+		<itemref idref="chapter36" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
 		<itemref idref="toc" linear="no"/>
