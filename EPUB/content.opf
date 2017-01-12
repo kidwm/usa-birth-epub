@@ -177,6 +177,8 @@
 		<item id="image_38-1" media-type="image/jpeg" href="images/HenryLee.jpeg" />
 		<item id="image_38-2" media-type="image/jpeg" href="images/Birch's_Views_Plate_23.jpg" />
 		<item id="image_38-3" media-type="image/jpeg" href="images/James_Madison.jpg" />
+		<item id="image_39-1" media-type="image/jpeg" href="images/Edmund_Randolph,_head-and-shoulders_portrait.jpg" />
+		<item id="image_39-2" media-type="image/jpeg" href="images/Gouverneur_Morris.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -222,6 +224,7 @@
 		<item href="chapter36.xhtml" id="chapter36" media-type="application/xhtml+xml"/>
 		<item href="chapter37.xhtml" id="chapter37" media-type="application/xhtml+xml"/>
 		<item href="chapter38.xhtml" id="chapter38" media-type="application/xhtml+xml"/>
+		<item href="chapter39.xhtml" id="chapter39" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -268,6 +271,7 @@
 		<itemref idref="chapter36" linear="yes" />
 		<itemref idref="chapter37" linear="yes" />
 		<itemref idref="chapter38" linear="yes" />
+		<itemref idref="chapter39" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
 		<itemref idref="toc" linear="no"/>
