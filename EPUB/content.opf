@@ -184,6 +184,9 @@
 		<item id="image_40-3" media-type="image/jpeg" href="images/George_Mason_portrait.jpg" />
 		<item id="image_40-4" media-type="image/jpeg" href="images/JusticeJamesWilson.jpg" />
 		<item id="image_40-5" media-type="image/gif" href="images/GeorgeRead.gif" />
+		<item id="image_42-1" media-type="image/jpeg" href="images/SlaveDanceand_Music.jpg" />
+		<item id="image_42-2" media-type="image/jpeg" href="images/Mountrushmore.jpg" />
+		<item id="image_42-3" media-type="image/jpeg" href="images/UncleTomsCabinCover.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -232,6 +235,7 @@
 		<item href="chapter39.xhtml" id="chapter39" media-type="application/xhtml+xml"/>
 		<item href="chapter40.xhtml" id="chapter40" media-type="application/xhtml+xml"/>
 		<item href="chapter41.xhtml" id="chapter41" media-type="application/xhtml+xml"/>
+		<item href="chapter42.xhtml" id="chapter42" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -281,6 +285,7 @@
 		<itemref idref="chapter39" linear="yes" />
 		<itemref idref="chapter40" linear="yes" />
 		<itemref idref="chapter41" linear="yes" />
+		<itemref idref="chapter42" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
 		<itemref idref="toc" linear="no"/>
