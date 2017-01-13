@@ -184,10 +184,14 @@
 		<item id="image_40-3" media-type="image/jpeg" href="images/George_Mason_portrait.jpg" />
 		<item id="image_40-4" media-type="image/jpeg" href="images/JusticeJamesWilson.jpg" />
 		<item id="image_40-5" media-type="image/gif" href="images/GeorgeRead.gif" />
+		<item id="image_41-1" media-type="image/jpeg" href="images/Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg" />
 		<item id="image_42-1" media-type="image/jpeg" href="images/SlaveDanceand_Music.jpg" />
 		<item id="image_42-2" media-type="image/jpeg" href="images/Mountrushmore.jpg" />
 		<item id="image_42-3" media-type="image/jpeg" href="images/UncleTomsCabinCover.jpg" />
 		<item id="image_43-1" media-type="image/gif" href="images/Mason-dixon-line.gif" />
+		<item id="image_44-1" media-type="image/jpeg" href="images/English_Bill_of_Rights_of_1689.jpg" />
+		<item id="image_44-2" media-type="image/jpeg" href="images/The_Federalist_(1st_ed,_1788,_vol_I,_title_page)_-_02.jpg" />
+		<item id="image_44-3" media-type="image/jpeg" href="images/Bill_of_Rights_Pg1of1_AC.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -238,6 +242,7 @@
 		<item href="chapter41.xhtml" id="chapter41" media-type="application/xhtml+xml"/>
 		<item href="chapter42.xhtml" id="chapter42" media-type="application/xhtml+xml"/>
 		<item href="chapter43.xhtml" id="chapter43" media-type="application/xhtml+xml"/>
+		<item href="chapter44.xhtml" id="chapter44" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -289,6 +294,7 @@
 		<itemref idref="chapter41" linear="yes" />
 		<itemref idref="chapter42" linear="yes" />
 		<itemref idref="chapter43" linear="yes" />
+		<itemref idref="chapter44" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
 		<itemref idref="toc" linear="no"/>
