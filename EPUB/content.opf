@@ -192,6 +192,9 @@
 		<item id="image_44-2" media-type="image/jpeg" href="images/The_Federalist_(1st_ed,_1788,_vol_I,_title_page)_-_02.jpg" />
 		<item id="image_44-3" media-type="image/jpeg" href="images/Bill_of_Rights_Pg1of1_AC.jpg" />
 		<item id="image_45-1" media-type="image/jpeg" href="images/Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg" />
+		<item id="image_46-1" media-type="image/jpeg" href="images/BushrodWashington.jpg" />
+		<item id="image_46-2" media-type="image/jpeg" href="images/Map_of_the_District_of_Columbia,_1835.jpg" />
+		<item id="image_46-3" media-type="image/jpeg" href="images/BurningofWashington1814.jpg" />
 		<item href="toc.xhtml" id="toc" properties="nav" media-type="application/xhtml+xml"/>
 		<item href="part1.xhtml" id="part1" media-type="application/xhtml+xml"/>
 		<item href="part2.xhtml" id="part2" media-type="application/xhtml+xml"/>
@@ -244,6 +247,7 @@
 		<item href="chapter43.xhtml" id="chapter43" media-type="application/xhtml+xml"/>
 		<item href="chapter44.xhtml" id="chapter44" media-type="application/xhtml+xml"/>
 		<item href="chapter45.xhtml" id="chapter45" media-type="application/xhtml+xml"/>
+		<item href="chapter46.xhtml" id="chapter46" media-type="application/xhtml+xml"/>
 		<item href="afterword.xhtml" id="afterword" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
@@ -298,6 +302,7 @@
 		<itemref idref="chapter44" linear="yes" />
 		<itemref idref="part6" linear="yes" />
 		<itemref idref="chapter45" linear="yes" />
+		<itemref idref="chapter46" linear="yes" />
 		<itemref idref="afterword" linear="yes" />
 		<itemref idref="toc" linear="no"/>
 	</spine>
