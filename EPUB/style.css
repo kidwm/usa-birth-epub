@@ -32,6 +32,7 @@ aside[epub|type~="footnotes"] {
 
 body {
 	margin: .5em;
+	line-height: 1.8;
 }
 
 p {
@@ -59,6 +60,8 @@ figcaption {
 	text-align: center;
 	padding: .5em;
 	background-color: #eee;
+	color: #333;
+	font-size: .9em;
 }
 
 aside {
@@ -71,6 +74,17 @@ header + aside {
 	border: none;
 	border-left: .5em solid #ccc;
 	padding-left: .5em;
+}
+
+header > span {
+	display: inline-block;
+	background-color: #002663;
+	color: #fff;
+	padding: .5em;
+}
+
+header > span + h1 {
+	border-bottom: .3em solid #C1133D;
 }
 
 #ref { /* fix for Google Play Books */
