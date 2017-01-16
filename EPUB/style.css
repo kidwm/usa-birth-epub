@@ -12,6 +12,7 @@ aside[epub|type~="footnotes"] {
 }
 
 [epub|type~="part"] > header {
+	margin: 0;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -24,6 +25,22 @@ aside[epub|type~="footnotes"] {
 	font-size: 1.5em;
 	text-align: center;
 	width: 100%;
+}
+
+[epub|type~="colophon"] {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+[epub|type~="colophon"] main {
+	flex-grow: 1;
+}
+
+[epub|type~="colophon"] footer p {
+	font-size: small;
 }
 
 [epub|type~="chapter"] {
