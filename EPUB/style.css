@@ -35,6 +35,10 @@ aside[epub|type~="footnotes"] {
 	text-align: center;
 }
 
+[epub|type~="colophon"] h1 {
+	text-align: center;
+}
+
 [epub|type~="colophon"] main {
 	flex-grow: 1;
 }
