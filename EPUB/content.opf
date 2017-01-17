@@ -10,6 +10,7 @@
 		<meta property="dcterms:modified">2016-08-30T12:00:00Z</meta>
 	</metadata>
 	<manifest>
+		<item id="cover-image" properties="cover-image" href="cover.png" media-type="image/png"/>
 		<item href="style.css" id="style" media-type="text/css"/>
 		<item id="image_01_1" media-type="image/jpeg" href="images/Amerikanska_folk_Nordisk_familjebok.jpg" />
 		<item id="image_01_2" media-type="image/jpeg" href="images/Viajes_de_colon.jpg" />
