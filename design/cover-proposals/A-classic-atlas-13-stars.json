@@ -1,0 +1,23 @@
+{
+  "concept": "A — 古典史書，十三星修正版",
+  "selected_by_user": true,
+  "generation_mode": "built-in image_gen",
+  "inputs": [
+    "A-classic-atlas.png",
+    "references/flag-1777.png"
+  ],
+  "output": "A-classic-atlas-13-stars.png",
+  "verification": {
+    "method": "Visual inspection of generated cover",
+    "visible_stars_by_row": [
+      3,
+      2,
+      3,
+      2,
+      3
+    ],
+    "total_visible_stars": 13,
+    "all_stars_fully_visible": true
+  },
+  "prompt": "Use case: precise-object-edit.\nAsset type: corrected version of the selected book-cover design A.\nInput image 1 is the EDIT TARGET, A-classic-atlas.png.\nInput image 2 is a HISTORICAL FLAG REFERENCE ONLY, showing exactly thirteen stars in rows of 3, 2, 3, 2, 3.\n\nThe user has selected design A and requires that the flag star count be correct.\nMake ONE localized correction to input image 1: replace the existing star arrangement inside the navy-blue vertical rectangle at the upper-left edge with EXACTLY THIRTEEN (13) complete ivory five-pointed stars. Remove ALL of the existing stars before placing the new ones. There must be precisely FIVE horizontal rows, from top to bottom:\nrow 1: THREE stars\nrow 2: TWO stars, staggered between the three above\nrow 3: THREE stars\nrow 4: TWO stars, staggered\nrow 5: THREE stars\nTotal 3 + 2 + 3 + 2 + 3 = 13 stars.\nUse the historical pattern of input image 2, fitted gracefully into the existing tall narrow blue rectangle. All thirteen stars must be entirely visible, distinct, equally sized, and surrounded by generous blue margins; none may be cut off by the cover edge or hidden. The three-star rows must each fit entirely within the narrow blue rectangle. Scale down the stars as necessary. Spread five rows evenly over the existing navy rectangle's height. The stars should be the same warm ivory as the original and have subtle matching print texture.\n\nCritical preservation requirements: preserve the entire rest of image 1 without redesign. Preserve the exact cover aspect ratio and dimensions, title \"美國的誕生\", line breaks, serif typography, title and author position, red and navy title colors, exact author \"藍弋丰\", thin horizontal rule, ivory paper background and aging, antique map and all its placement and details, and the existing red and ivory vertical stripes below the navy rectangle. Keep the navy rectangle's existing bounds exactly unchanged. Do not add stars anywhere else. Do not copy the flag reference's horizontal rectangular layout into the cover. Do not add any annotations, numbers, labels or watermarks.\nOutput one flat full-cover image, no surrounding mockup or perspective. Count the stars before finishing: five rows with 3,2,3,2,3 is exactly 13."
+}

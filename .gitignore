@@ -1,0 +1,9 @@
+# Exported deliverables are rebuilt from the tracked cover and EPUB sources.
+/output/
+
+# Local visual verification renders.
+/design/cover-final/preview.png
+/design/cover-final/browser-proof.png
+
+.DS_Store
+__pycache__/

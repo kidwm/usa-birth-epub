@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-31",
+  "book": {
+    "title": "美國的誕生",
+    "author": "藍弋丰",
+    "existing_cover": "EPUB/cover.png",
+    "existing_editable_cover": "cover.svg"
+  },
+  "purpose": "Discussion-only cover redesign mockups; original EPUB cover is unchanged. AI-rendered historical lettering, star counts and geography require precise source-based typesetting/compositing for production.",
+  "generation_mode": "built-in image_gen",
+  "references": [
+    {
+      "file": "references/map-1783.jpg",
+      "title": "A map of the United States of America agreeable to the peace of 1783",
+      "creators": "William Darton; William Guthrie",
+      "date": "1783",
+      "source": "https://commons.wikimedia.org/wiki/File:A_map_of_the_United_States_of_America_agreeable_to_the_peace_of_1783._LOC_74696218.jpg",
+      "original_institution": "https://www.loc.gov/item/74696218/",
+      "rights_as_listed": "Public domain / PD-Art",
+      "use": "Supporting reference for all three AI cover mockups"
+    },
+    {
+      "file": "references/flag-1777.png",
+      "title": "Flag of the United States (1777–1795)",
+      "creator": "Jacobolus (SVG)",
+      "design": "13 stars in 3–2–3–2–3 pattern; 13 stripes",
+      "source": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States_(1777%E2%80%931795).svg",
+      "rights_as_listed": "Released into public domain by copyright holder",
+      "use": "Supporting reference for all three AI cover mockups"
+    },
+    {
+      "file": "references/original-map.jpg",
+      "title": "A New Map of North America Showing all the New Discoveries 1797",
+      "source": "Embedded JPEG extracted without alteration from the existing cover.svg",
+      "use": "Inspection of existing cover; not used as generation input"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "A",
+      "file": "A-classic-atlas.png",
+      "name": "古典史書"
+    },
+    {
+      "id": "B",
+      "file": "B-editorial-collage.png",
+      "name": "現代拼貼"
+    },
+    {
+      "id": "C",
+      "file": "C-navy-collection.png",
+      "name": "深藍典藏"
+    }
+  ],
+  "review_notes": [
+    "All three main titles and author names visually reviewed.",
+    "Historical map lettering is AI-rendered and includes inaccuracies, e.g. C labels Lake Ontario as Lake Superior. These are layout discussions only; use original historical map pixels and editable type in the production cover.",
+    "A and B show cropped/stylized flag fragments, so visible star counts should not be treated as complete flag specifications."
+  ],
+  "selected_proposal": {
+    "id": "A",
+    "file": "A-classic-atlas-13-stars.png",
+    "name": "古典史書，十三星修正版",
+    "details": "A-classic-atlas-13-stars.json",
+    "verified_star_rows": [
+      3,
+      2,
+      3,
+      2,
+      3
+    ]
+  }
+}
