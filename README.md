@@ -34,6 +34,14 @@ python3 scripts/setup_tools.py --epubcheck
 
 `SOURCE_DATE_EPOCH` 控制 EPUB 的時間戳，預設採用最近一次 Git commit 時間；相同原稿、工具版本與時間戳會產生相同的 EPUB。發行時可明確指定該環境變數。
 
+## GitHub Actions 自動建置
+
+每次 push 到 `main`，都會在 Ubuntu 上執行相同的建置流程，包含 EPUBCheck 與回歸測試。全部通過後，上傳 `usa-birth.epub`，產物保留 30 天。
+
+登入 GitHub，開啟 [Build EPUB 工作流程](https://github.com/kidwm/usa-birth-epub/actions/workflows/build-epub.yml)，選擇成功的執行紀錄，再從 **Artifacts → usa-birth.epub** 下載。工作摘要也會提供下載連結，檔案可直接以 EPUB 閱讀器開啟。
+
+需要重新建置時，可在同一頁使用 **Run workflow** 手動執行。
+
 ## 維護原稿
 
 - `content/`：50 章、6 個部首頁、出版資訊與後記，共 58 份 Markdown。
