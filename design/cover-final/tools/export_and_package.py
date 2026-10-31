@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """Export sRGB cover deliverables, validate their sources, then package the EPUB."""
 import base64
-import datetime
 import hashlib
 import json
-import re
 import shutil
+import subprocess
+import sys
 import zipfile
 from collections import Counter
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree as ET
 
 from PIL import Image, ImageCms
@@ -62,58 +61,20 @@ for path in [png_path, jpg_path]:
     with Image.open(path) as exported:
         assert exported.size == (1920, 2560) and exported.mode == 'RGB'
         assert exported.info.get('icc_profile') == icc
-shutil.copyfile(jpg_path, ROOT / 'EPUB/cover.jpg')
+shutil.copyfile(jpg_path, ROOT / 'assets/cover.jpg')
 shutil.copyfile(ROOT / 'cover.svg', OUT / 'usa-birth-cover-editable.svg')
 shutil.copyfile(FINAL / 'cover-outlined.svg', OUT / 'usa-birth-cover-outlined.svg')
 
-opf_path = ROOT / 'EPUB/content.opf'
-timestamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-opf_text = opf_path.read_text()
-opf_text, count = re.subn(r'(<meta property="dcterms:modified">)[^<]*(</meta>)', lambda m:m[1]+timestamp+m[2], opf_text)
-assert count == 1
-opf_path.write_text(opf_text)
-opf = ET.fromstring(opf_text)
-manifest = {e.attrib['id']: e.attrib for e in opf.find('o:manifest', NS)}
-covers = [e for e in manifest.values() if 'cover-image' in e.get('properties', '').split()]
-assert len(covers) == 1 and covers[0]['href'] == 'cover.jpg' and covers[0]['media-type'] == 'image/jpeg'
-assert opf.find('o:spine', NS)[0].attrib['idref'] == 'cover-page'
-for item in manifest.values():
-    assert (ROOT / 'EPUB' / unquote(item['href'])).is_file(), item
-local_links = 0
-for path in (ROOT / 'EPUB').glob('*.xhtml'):
-    tree = ET.parse(path)
-    for element in tree.iter():
-        for key, value in element.attrib.items():
-            if key not in ('src', 'href', XLINK): continue
-            url = urlsplit(value)
-            if url.scheme or url.netloc or not url.path: continue
-            assert (path.parent / unquote(url.path)).is_file(), (path.name, value)
-            local_links += 1
-for item in opf.find('o:spine', NS):
-    assert item.attrib['idref'] in manifest
-
-epub_path = OUT / 'usa-birth-new-cover.epub'
-with zipfile.ZipFile(epub_path, 'w') as archive:
-    archive.writestr('mimetype', b'application/epub+zip', compress_type=zipfile.ZIP_STORED)
-    for folder in ['META-INF', 'EPUB']:
-        for path in sorted((ROOT / folder).rglob('*')):
-            if path.is_file() and path.name != '.DS_Store':
-                archive.write(path, path.relative_to(ROOT).as_posix(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+# The manuscript build owns EPUB metadata, resources, validation and packaging.
+subprocess.run([sys.executable, str(ROOT / 'scripts/build.py')], check=True)
+epub_path = OUT / 'usa-birth.epub'
+epub_report = json.loads((OUT / 'validation-report.json').read_text())
 with zipfile.ZipFile(epub_path) as archive:
-    assert archive.infolist()[0].filename == 'mimetype'
-    assert archive.infolist()[0].compress_type == zipfile.ZIP_STORED
-    assert archive.testzip() is None
-    assert archive.read('EPUB/cover.jpg') == jpg_path.read_bytes()
-    expected = {'EPUB/'+unquote(e['href']) for e in manifest.values()}
-    packaged = {n for n in archive.namelist() if n.startswith('EPUB/') and n != 'EPUB/content.opf'}
-    assert expected == packaged
     entry_count = len(archive.infolist())
 
 report = {
     'status': 'passed',
-    'created_utc': timestamp,
-    'scope': 'Native SVG artwork, exact historical map bytes, vector stars, live text, outlined text, image export, EPUB cover references, local resource files, XML parsing, ZIP structure and CRCs.',
-    'epubcheck': 'Full EPUBCheck not run: Java runtime and EPUBCheck are not installed.',
+    'scope': 'Native SVG artwork, exact historical map bytes, vector stars, live text, outlined text, image export, and the Markdown EPUB build.',
     'cover': {
         'width': 1920, 'height': 2560, 'aspect_ratio': '3:4',
         'color_space': 'sRGB', 'jpeg_quality': 92, 'jpeg_subsampling': 0,
@@ -129,7 +90,7 @@ report = {
         'ai_mockup_pixels_in_final': False,
         'fonts': 'Noto Serif TC, weights 900 and 600; embedded subsets and original TTF supplied under SIL OFL.',
     },
-    'epub': {'file': epub_path.name, 'bytes': epub_path.stat().st_size, 'entries': entry_count, 'local_resource_links_checked': local_links},
+    'epub': {'file': epub_path.name, 'bytes': epub_path.stat().st_size, 'entries': entry_count, 'validation': epub_report},
 }
-(OUT / 'validation-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
+(OUT / 'cover-validation-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
 print(json.dumps(report, ensure_ascii=False, indent=2))

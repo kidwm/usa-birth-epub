@@ -33,6 +33,8 @@ node design/cover-final/tools/render_cover.cjs
 python3 design/cover-final/tools/export_and_package.py
 ```
 
-`SVG_RENDER_MODULE` 可指定 `@resvg/resvg-js` 的安裝路徑。版面座標、遮罩與字級都集中在 `tools/build_cover.py`，可重新產生可編輯與轉曲兩份 SVG。PNG/JPEG 使用 sRGB；JPEG 品質為 92，關閉色度子取樣以維持文字邊緣品質。EPUB 引用 JPEG，並保留可等比例顯示的封面頁。
+先依專案根目錄 README 安裝 Pandoc 3.13。`SVG_RENDER_MODULE` 可指定 `@resvg/resvg-js` 的安裝路徑。版面座標、遮罩與字級都集中在 `tools/build_cover.py`，可重新產生可編輯與轉曲兩份 SVG。PNG/JPEG 使用 sRGB；JPEG 品質為 92，關閉色度子取樣以維持文字邊緣品質。
+
+`export_and_package.py` 會更新 `assets/cover.jpg`，再呼叫 `scripts/build.py`，從 Markdown 產生 `output/usa-birth.epub`。封面圖像驗證寫入 `output/cover-validation-report.json`，書籍內容與連結驗證寫入 `output/validation-report.json`。需要完整 EPUBCheck 時，另執行 `./package.sh --epubcheck`。EPUB 引用 JPEG，並保留可等比例顯示的封面頁。
 
 先前版本備份為 `original-cover.svg`、`original-cover-600x800.png`；提案模擬圖仍保存在 `../cover-proposals/`。

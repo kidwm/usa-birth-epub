@@ -1,4 +1,4 @@
-#!/bin/bash
-rm "$1"
-zip -X0 "$1" mimetype
-zip -X9r "$1" META-INF EPUB -x "*.DS_Store"
+#!/bin/sh
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec python3 "$root/scripts/build.py" "$@"

@@ -1,5 +1,7 @@
-# Exported deliverables are rebuilt from the tracked cover and EPUB sources.
+# Exported deliverables are rebuilt from Markdown, styles and cover sources.
 /output/
+/build/
+/.tools/
 
 # Local visual verification renders.
 /design/cover-final/preview.png

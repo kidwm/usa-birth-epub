@@ -1,0 +1,121 @@
+/* Reflowable Chinese book typography. Reader settings remain in control. */
+@charset "UTF-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+@page { margin: 1.2em .9em; }
+html { -webkit-text-size-adjust: 100%; color-scheme: light dark; }
+body {
+  font-family: "Noto Serif CJK TC", "Noto Serif TC", "Source Han Serif TC", "Songti TC", serif;
+  font-size: 1em;
+  line-height: 1.85;
+  margin: 0 auto;
+  padding: 0 .75em;
+  max-width: 36em;
+  overflow-wrap: break-word;
+  line-break: strict;
+  widows: 2;
+  orphans: 2;
+}
+p { margin: 0 0 .85em; text-align: justify; }
+h1, h2, h3 { line-height: 1.5; font-weight: 700; text-align: start; }
+h1, h2, h3, figcaption { break-after: avoid; page-break-after: avoid; }
+a { color: inherit; text-decoration: underline; text-underline-offset: .15em; }
+
+/* A small blue folio and a red rule echo the historical atlas cover. */
+h1 .division-label, h2 .division-label {
+  display: block;
+  color: #26435c;
+  font-family: "Noto Sans CJK TC", "PingFang TC", sans-serif;
+  font-size: .45em;
+  font-weight: 500;
+  letter-spacing: .16em;
+  margin-bottom: 1.1em;
+}
+h1 .division-title, h2 .division-title { display: block; }
+section.chapter > h2, section.afterword > h1 {
+  font-size: 1.65em;
+  margin: 1.8em 0 1.45em;
+  padding: .85em 0 1em;
+  border-top: .16em solid #8b3438;
+  border-bottom: 1px solid #a9a9a9;
+}
+section.part { padding: 15% 0 12%; }
+section.part > h1 { margin: 0; text-align: center; font-size: 1.9em; }
+section.part > h1 .division-label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2em;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: .65em;
+}
+section.part > h1 .division-title { border-top: 1px solid #8b3438; padding-top: 1em; }
+
+.lead {
+  border-inline-start: .2em solid #8b3438;
+  border-left: .2em solid #8b3438;
+  padding: .15em 0 .15em 1em;
+  margin: 0 0 1.8em;
+  font-size: .92em;
+}
+.lead p:last-child { margin-bottom: 0; }
+.verse { margin: 1.5em 0; }
+.verse p { text-align: center; margin-bottom: .4em; }
+
+figure { margin: 1.8em 0; text-align: center; }
+figure img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  margin: 0 auto;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+/* Let a long caption wrap across pages rather than force an oversized figure. */
+figcaption {
+  font-size: .82em;
+  line-height: 1.65;
+  text-align: start;
+  border-bottom: 1px solid #b8b8b8;
+  padding: .65em .1em;
+}
+figcaption p { margin: 0; text-align: start; }
+
+a[epub|type~="noteref"] { font-size: .75em; vertical-align: super; line-height: 0; padding: 0 .12em; }
+.footnotes { margin-top: 2em; font-size: .85em; }
+.footnotes hr { border: 0; border-top: 1px solid #a9a9a9; width: 35%; margin: 0 0 1em; }
+.footnotes ol { padding-left: 1.6em; }
+.footnotes p { text-align: start; }
+.footnote-back { text-decoration: none; }
+
+.titlepage { margin: 16% 0 8%; text-align: center; }
+.titlepage .title { font-size: 2.4em; line-height: 1.5; text-align: center; border-top: .07em solid #8b3438; padding-top: .8em; }
+.titlepage p { text-align: center; }
+.titlepage .author { margin: 2em 0 4em; font-size: 1.1em; letter-spacing: .2em; }
+.titlepage .publisher { font-size: .85em; }
+.colophon { font-size: .9em; }
+.colophon h1 { font-size: 1.4em; margin: 2em 0; }
+.colophon p { text-align: start; }
+
+nav h1 { font-size: 1.5em; margin: 1.8em 0 1.4em; }
+nav ol { list-style-type: none; padding-left: 0; }
+nav ol ol { margin: .6em 0 1.3em; padding-left: 1em; font-size: .9em; }
+nav li { margin: 0 0 .65em; line-height: 1.6; }
+nav a { text-decoration: none; }
+nav > ol > li { font-weight: 700; }
+nav ol ol li { font-weight: 400; }
+nav .division-label { color: #26435c; margin-right: .4em; font-size: .85em; }
+
+/* The cover fills the viewport while preserving its 3:4 aspect ratio. */
+body#cover { margin: 0; padding: 0; max-width: none; }
+#cover-image { height: 100vh; margin: 0; }
+#cover-image svg { display: block; width: 100%; height: 100%; }
+
+@media (prefers-color-scheme: dark) {
+  h1 .division-label, h2 .division-label, nav .division-label { color: #a8c0d4; }
+  section.chapter > h2, section.afterword > h1, .titlepage .title,
+  section.part > h1 .division-title, .lead { border-color: #bc8585; }
+}

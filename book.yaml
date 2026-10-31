@@ -1,0 +1,88 @@
+# Pandoc defaults: this is the book's metadata and reading order.
+from: markdown-smart
+to: epub3
+standalone: true
+table-of-contents: true
+toc-depth: 2
+split-level: 2
+wrap: none
+fail-if-warnings: true
+epub-title-page: true
+epub-cover-image: assets/cover.jpg
+template: styles/epub.html
+css:
+  - styles/book.css
+filters:
+  - filters/book.lua
+resource-path:
+  - .
+  - content
+metadata:
+  title: 美國的誕生
+  author: 藍弋丰
+  lang: zh-Hant
+  publisher: epub.tw
+  identifier: https://github.com/kidwm/usa-birth-epub
+  rights: Creative Commons BY-NC-ND 3.0 TW
+  description: 美國是如何誕生，其過程高潮迭起，精彩萬分，也可給我們一些啟發，明白美國是如何從一個新生小國，逐漸轉變成為今日的世界獨強國家。
+  toc-title: 目錄
+  cover-description: 米白色封面，左側為十三星旗幟圖案，下方為美國古地圖。
+input-files:
+  - content/colophon.md
+  - content/part1.md
+  - content/chapter01.md
+  - content/chapter02.md
+  - content/chapter03.md
+  - content/chapter04.md
+  - content/chapter05.md
+  - content/chapter06.md
+  - content/chapter07.md
+  - content/part2.md
+  - content/chapter08.md
+  - content/chapter09.md
+  - content/chapter10.md
+  - content/chapter11.md
+  - content/chapter12.md
+  - content/chapter13.md
+  - content/chapter14.md
+  - content/chapter15.md
+  - content/chapter16.md
+  - content/chapter17.md
+  - content/part3.md
+  - content/chapter18.md
+  - content/chapter19.md
+  - content/chapter20.md
+  - content/chapter21.md
+  - content/chapter22.md
+  - content/chapter23.md
+  - content/chapter24.md
+  - content/part4.md
+  - content/chapter25.md
+  - content/chapter26.md
+  - content/chapter27.md
+  - content/chapter28.md
+  - content/chapter29.md
+  - content/chapter30.md
+  - content/chapter31.md
+  - content/chapter32.md
+  - content/chapter33.md
+  - content/chapter34.md
+  - content/part5.md
+  - content/chapter35.md
+  - content/chapter36.md
+  - content/chapter37.md
+  - content/chapter38.md
+  - content/chapter39.md
+  - content/chapter40.md
+  - content/chapter41.md
+  - content/chapter42.md
+  - content/chapter43.md
+  - content/chapter44.md
+  - content/part6.md
+  - content/chapter45.md
+  - content/chapter46.md
+  - content/chapter47.md
+  - content/chapter48.md
+  - content/chapter49.md
+  - content/chapter50.md
+  - content/afterword.md

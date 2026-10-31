@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="$lang$" xml:lang="$lang$">
+<head>
+  <meta charset="utf-8" />
+  <title>$pagetitle$</title>
+$for(css)$
+  <link rel="stylesheet" type="text/css" href="$css$" />
+$endfor$
+</head>
+<body$if(coverpage)$ id="cover"$endif$$if(body-type)$ epub:type="$body-type$"$endif$>
+$if(titlepage)$
+<section epub:type="titlepage" class="titlepage">
+  <h1 class="title">$title$</h1>
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+  <p class="publisher">$publisher$</p>
+</section>
+$else$
+$if(coverpage)$
+<div id="cover-image">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 $cover-image-width$ $cover-image-height$" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="cover-title cover-desc">
+    <title id="cover-title">$title$，$for(author)$$author$$sep$、$endfor$著</title>
+    <desc id="cover-desc">$cover-description$</desc>
+    <image width="$cover-image-width$" height="$cover-image-height$" xlink:href="../media/$cover-image$" />
+  </svg>
+</div>
+$else$
+$body$
+$endif$
+$endif$
+</body>
+</html>
