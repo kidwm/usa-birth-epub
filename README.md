@@ -4,6 +4,8 @@
 
 原稿以 Markdown 維護，使用固定版本的 Pandoc 產生 EPUB 3。正文維持原文，目錄從章首標題自動產生。
 
+[下載最新版 EPUB](https://github.com/kidwm/usa-birth-epub/releases/latest/download/usa-birth.epub) · [歷次發行版本](https://github.com/kidwm/usa-birth-epub/releases)
+
 ## 建置
 
 需要 Python 3.9+ 與 Pandoc **3.13**。以下指令將官方、校驗過 SHA-256 的 Pandoc 放進專案的 `.tools/`，支援 macOS 與 Linux 的 Intel／ARM；不會安裝至系統目錄。
@@ -34,13 +36,15 @@ python3 scripts/setup_tools.py --epubcheck
 
 `SOURCE_DATE_EPOCH` 控制 EPUB 的時間戳，預設採用最近一次 Git commit 時間；相同原稿、工具版本與時間戳會產生相同的 EPUB。發行時可明確指定該環境變數。
 
-## GitHub Actions 自動建置
+## GitHub Actions 自動建置與發佈
 
-每次 push 到 `main`，都會在 Ubuntu 上執行相同的建置流程，包含 EPUBCheck 與回歸測試。全部通過後，上傳 `usa-birth.epub`，產物保留 30 天。
+每次 push 到 `main`，都會在 Ubuntu 上執行相同的建置流程，包含 EPUBCheck 與回歸測試。全部通過後，自動建立新的 GitHub Release，附上 `usa-birth.epub` 與 `validation-report.json`，並標記為最新版。
 
-登入 GitHub，開啟 [Build EPUB 工作流程](https://github.com/kidwm/usa-birth-epub/actions/workflows/build-epub.yml)，選擇成功的執行紀錄，再從 **Artifacts → usa-birth.epub** 下載。工作摘要也會提供下載連結，檔案可直接以 EPUB 閱讀器開啟。
+[最新版 EPUB 的固定下載網址](https://github.com/kidwm/usa-birth-epub/releases/latest/download/usa-birth.epub)不需登入，也沒有 Actions artifact 的到期限制；後續發佈時，該網址會自動指向新版本。每次發佈使用獨立標籤，保留歷史版本的原始下載連結，並在發行說明中連回原稿 commit 與建置紀錄。
 
-需要重新建置時，可在同一頁使用 **Run workflow** 手動執行。
+新版從 `2.0` 開始，後續成功發佈自動遞增為 `2.0.1`、`2.0.2`。需要開始下一個版本系列時，修改工作流程中的 `RELEASE_SERIES`。
+
+開啟 [Build EPUB 工作流程](https://github.com/kidwm/usa-birth-epub/actions/workflows/build-epub.yml)可以查看結果，工作摘要也會提供下載連結。需要重新建置與發佈時，可使用 **Run workflow**，選擇 `main` 手動執行。
 
 ## 維護原稿
 

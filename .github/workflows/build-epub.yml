@@ -6,14 +6,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: build-epub-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -42,16 +43,48 @@ jobs:
       - name: Run regression tests
         run: python3 -m unittest discover -s tests -v
 
-      - name: Upload EPUB
-        id: epub
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        with:
-          path: output/usa-birth.epub
-          archive: false
-          if-no-files-found: error
-          retention-days: 30
+      - name: Publish GitHub Release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_SERIES: '2.0'
+        run: |
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
+            --jq '.[].tag_name' > build/release-tags.txt
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/tags?per_page=100" \
+            --jq '.[].name' >> build/release-tags.txt
+          tag=$(python3 - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+          series = os.environ['RELEASE_SERIES']
+          pattern = re.compile(re.escape(series) + r'(?:\.(\d+))?')
+          patches = []
+          for existing in Path('build/release-tags.txt').read_text().splitlines():
+              match = pattern.fullmatch(existing)
+              if match:
+                  patches.append(int(match[1] or 0))
+          patch = max(patches) + 1 if patches else 0
+          print(series if patch == 0 else f'{series}.{patch}')
+          PY
+          )
+          short_sha="${GITHUB_SHA:0:7}"
+          printf '%s\n\n%s\n\n%s\n' \
+            'EPUB 已通過格式、內容完整性檢查與回歸測試，可直接下載閱讀。' \
+            "原稿版本：[${short_sha}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA})" \
+            "[建置紀錄](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" \
+            > build/release-notes.md
+          release_url=$(gh release create "$tag" \
+            output/usa-birth.epub output/validation-report.json \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "美國的誕生 ${tag}" \
+            --notes-file build/release-notes.md \
+            --latest)
+          printf 'url=%s\n' "$release_url" >> "$GITHUB_OUTPUT"
 
       - name: Add download link to summary
         env:
-          EPUB_DOWNLOAD_URL: ${{ steps.epub.outputs.artifact-url }}
-        run: printf '[下載 EPUB](%s)（保留 30 天）\n' "$EPUB_DOWNLOAD_URL" >> "$GITHUB_STEP_SUMMARY"
+          EPUB_DOWNLOAD_URL: ${{ github.server_url }}/${{ github.repository }}/releases/latest/download/usa-birth.epub
+          RELEASE_URL: ${{ steps.release.outputs.url }}
+        run: printf '[下載最新版 EPUB](%s)\n\n[本次發佈](%s)\n' "$EPUB_DOWNLOAD_URL" "$RELEASE_URL" >> "$GITHUB_STEP_SUMMARY"
