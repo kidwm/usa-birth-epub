@@ -26,6 +26,10 @@
 
 但是伯哥因並不知道，由於殺害保王黨「女神」事件，以及史塔克的大勝，獨立派士氣大振，許多民兵紛紛加入，蓋茲手下的兵力從6000人膨脹到9000多人，而相對的伯哥因在被史塔克打掉千名士兵，印地安人又離他而去後，只剩7000人兵力，雙方數量已經逆轉。
 
+<!-- https://commons.wikimedia.org/wiki/File:Plan_of_the_encampment_and_position_of_the_army_under_His_Excelly._Lt._General_Burgoyne_at_Swords_House_on_Hudson%27s_River_near_Stillwater_on_Septr._17th_with_the_positions_of_that_part_of_the_army_LOC_gm71000661.jpg -->
+
+![〈薩拉托加戰役部署圖〉，W. C. Wilkinson 繪，William Faden 於1780年刊行。圖示1777年9月17日英軍營地及19日交戰部署；北方朝下，哈德遜河在左，弗里曼農場（Freeman’s Farm）在右上，可對照部隊穿越林地迎戰的位置。圖源：[美國國會圖書館](https://www.loc.gov/item/gm71000661/)；公有領域。](<../assets/images/Saratoga_Freeman_Farm_1780.jpg>){alt="薩拉托加戰場地圖，北方朝下，左側為哈德遜河，標示英軍營地、林地與弗里曼農場附近的交戰部署。"}
+
 蓋茲與阿諾此時也還沒有完全決裂，阿諾認定英軍會攻向左翼，希望趨前迎擊，但蓋茲認為英軍主攻會是正電，只想待在陣地，不過他還是准許阿諾派出先遣部隊，而阿諾派出的，正是鼎鼎大名的丹尼爾‧摩根(Daniel Morgan)來福槍狙擊手部隊。
 
 <!-- https://commons.wikimedia.org/wiki/File:DanielMorgan.jpeg -->
